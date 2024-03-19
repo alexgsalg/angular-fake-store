@@ -11,7 +11,8 @@
     </a>
 
     <nav
-      class="header_nav nav col-7 col-lg-auto order-2 order-md-1 me-auto justify-content-start mb-md-0">
+      class="header_nav nav col-7 col-lg-auto order-2 order-md-1 me-auto flex-column flex-md-row justify-content-start mb-md-0">
+      <ion-icon name="close" class="header_nav__close d-md-none"></ion-icon>
       <a
         routerLink="/"
         routerLinkActive="active"
@@ -22,9 +23,10 @@
         routerLink="/categories"
         routerLinkActive="active"
         class="header_nav__link nav-link px-2 text-secondary"
-        >Favorites</a
+        >Categories</a
       >
     </nav>
+    <span class="header_nav-backdrop d-md-none"></span>
 
     <div
       class="header_actions col-2 oder-1 order-md-2 d-flex justify-content-between align-items-center">
@@ -35,6 +37,9 @@
         class="header__avatar"
         src="https://api.dicebear.com/8.x/fun-emoji/svg?seed=Buster"
         alt="avatar" />
+      <button class="header__cart d-md-none" (click)="showMenu = !showMenu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
     </div>
   </div>
 </header>

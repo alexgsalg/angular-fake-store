@@ -11,4 +11,6 @@ import { ButtonComponent } from '../button/button.component';
   imports: [CommonModule, RouterLink, ButtonComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  showMenu: boolean = false;
+}
