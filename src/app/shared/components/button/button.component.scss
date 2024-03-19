@@ -1,0 +1,36 @@
+:host {
+  pointer-events: none;
+}
+:host ::ng-deep button * {
+  pointer-events: none;
+}
+
+button {
+  pointer-events: auto;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  height: 40px;
+
+  letter-spacing: 0.02rem;
+
+  &__icon {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--short {
+    padding: 0.4rem 0.5rem;
+    line-height: 130%;
+  }
+
+}

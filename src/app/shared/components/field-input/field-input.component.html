@@ -1,0 +1,17 @@
+<div class="field-input">
+  <label class="field-input__label" [for]="name">{{ label }}</label>
+
+  <input
+    [name]="name"
+    [placeholder]="placeholder"
+    [formControl]="control"
+    class="field-input__input"
+    [class.border-danger]="control.dirty && control.errors"
+    [type]="type"
+    [required]="required"
+    (focus)="onFocus.emit()"
+    (blur)="onBlur.emit()"
+    >
+
+    <small class="field-input__helper text-muted mt-2">{{ helperMsg }}</small>
+</div>
