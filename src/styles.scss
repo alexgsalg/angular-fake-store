@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  --clr-orange: #ff7d1a;
+  --clr-orange-pale: #ffede0;
+  --clr-blue: #1d2025;
+  --clr-blue-gray: #68707d;
+  --clr-gray: #b6bcc8;
+  --clr-gray-light: #f7f8fd;
+}
 /* Importing Bootstrap SCSS file. */
 $theme-colors: (
   'orange': #ff7d1a,

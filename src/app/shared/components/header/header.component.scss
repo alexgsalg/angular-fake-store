@@ -4,8 +4,68 @@
   height: var(--header-height);
   z-index: 200;
 
+  &_container {
+    border-bottom: 1px solid var(--clr-gray);
+  }
+
+  &_brand {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+
   &__logo {
-    height: 30px;
+    width: 100%;
+  }
+
+  &_nav {
+    height: calc(#{var(--header-height)} - 1rem);
+
+    &__link {
+      color: var(--clr-blue-gray);
+      border-bottom: 1px solid transparent;
+      transition: all 195ms linear;
+
+      &:hover {
+        color: var(--clr-blue);
+        border-bottom: 3px solid var(--clr-orange);
+      }
+    }
+  }
+
+  &_actions {
+    width: 100px;
+    gap: 0.5rem;
+  }
+
+  &__cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: var(--clr-blue-gray);
+    background: none;
+    border: none;
+    transition: color 195ms linear;
+
+    &:hover {
+      color: var(--clr-blue);
+    }
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all 195ms linear;
+
+    &:hover {
+      border: 2px solid var(--clr-orange);
+    }
   }
 }
 
@@ -19,7 +79,7 @@
   .header {
     --header-height: 4.5rem;
     &__logo {
-      height: 40px;
+      // height: 40px;
     }
   }
 }

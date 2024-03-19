@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../button/button.component';
 
@@ -9,5 +9,6 @@ import { ButtonComponent } from '../button/button.component';
   styleUrls: ['./header.component.scss'],
   standalone: true,
   imports: [CommonModule, RouterLink, ButtonComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HeaderComponent {}
