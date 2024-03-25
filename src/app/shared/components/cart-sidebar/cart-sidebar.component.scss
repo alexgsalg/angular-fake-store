@@ -39,3 +39,56 @@
     padding: 0.5rem 1rem 1rem;
   }
 }
+
+.cart_list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  overflow: auto;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--clr-blue-gray);
+
+    &__img {
+      flex: 0 0 20%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 0.25rem;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+
+    &_info {
+      flex: 1;
+
+      &__title {
+        margin: 0;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+
+      &__price {
+        margin: 0;
+        font-size: 0.75rem;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &_action {
+      flex: 0 0 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+    }
+  }
+}

@@ -8,7 +8,22 @@
         (click)="closeCartSidebar()"></ion-icon>
     </header>
 
-    <div class="cart-aside_body"></div>
+    <div class="cart-aside_body">
+      <div class="cart_list">
+        <article class="cart_list__item">
+          <img src="" alt="" class="cart_list__item__img" />
+          <div class="cart_list__item_info">
+            <h3 class="cart_list__item_info__title">title</h3>
+            <p class="cart_list__item_info__price">
+              price x qnt <strong>total</strong>
+            </p>
+          </div>
+          <div class="cart_list__item_action">
+            <ion-icon name="trash-outline" class=""></ion-icon>
+          </div>
+        </article>
+      </div>
+    </div>
 
     <footer class="cart-aside_footer">
       <app-button [fullwidth]="true">Go to Checkout</app-button>
