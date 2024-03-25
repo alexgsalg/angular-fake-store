@@ -3,10 +3,7 @@
   inset: 0 0 auto 0;
   height: var(--header-height);
   z-index: 200;
-
-  &_container {
-    border-bottom: 1px solid var(--clr-gray);
-  }
+  border-bottom: 1px solid var(--clr-gray);
 
   &_brand {
     display: flex;
@@ -109,7 +106,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    --header-height: 4.5rem;
+    // --header-height: 4.5rem;
 
     &_nav {
       position: relative;

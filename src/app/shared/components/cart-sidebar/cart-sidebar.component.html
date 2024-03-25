@@ -1,0 +1,17 @@
+@if (showCart | async) {
+  <aside @showHide class="cart-aside">
+    <header class="cart-aside_header">
+      <h2 class="cart-aside_header__title">Cart</h2>
+      <ion-icon
+        name="close"
+        class="cart-aside_header__close"
+        (click)="closeCartSidebar()"></ion-icon>
+    </header>
+
+    <div class="cart-aside_body"></div>
+
+    <footer class="cart-aside_footer">
+      <app-button [fullwidth]="true">Go to Checkout</app-button>
+    </footer>
+  </aside>
+}
